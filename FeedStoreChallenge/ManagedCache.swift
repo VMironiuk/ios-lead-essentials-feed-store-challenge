@@ -15,7 +15,13 @@ class ManagedCache: NSManagedObject {
 }
 
 extension ManagedCache {
-	static func fetchRequest() -> NSFetchRequest<ManagedCache> {
+	static func find(in context: NSManagedObjectContext) throws -> ManagedCache? {
+		let fetchRequest: NSFetchRequest<ManagedCache> = fetchRequest()
+		fetchRequest.returnsObjectsAsFaults = false
+		return try context.fetch(fetchRequest).first
+	}
+
+	private static func fetchRequest() -> NSFetchRequest<ManagedCache> {
 		NSFetchRequest(entityName: "ManagedCache")
 	}
 }
