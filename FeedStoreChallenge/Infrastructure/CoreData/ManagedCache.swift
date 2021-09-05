@@ -31,6 +31,6 @@ extension ManagedCache {
 	}
 
 	private static func fetchRequest() -> NSFetchRequest<ManagedCache> {
-		NSFetchRequest(entityName: "ManagedCache")
+		NSFetchRequest(entityName: String(describing: self))
 	}
 }
