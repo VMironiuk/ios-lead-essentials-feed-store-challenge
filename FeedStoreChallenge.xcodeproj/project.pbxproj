@@ -111,10 +111,7 @@
 				08CB21E1261638BA00751C29 /* Helpers */,
 				08CE2BA72285BCC600183A1B /* LocalFeedImage.swift */,
 				08CE2BA52285BCB600183A1B /* FeedStore.swift */,
-				08F35C6E261612AE00AFE277 /* CoreDataFeedStore.swift */,
-				3CBEA48826E37C7D00D16FFF /* FeedStore.xcdatamodeld */,
-				3CBEA48C26E382FC00D16FFF /* ManagedCache.swift */,
-				3CBEA48E26E3831200D16FFF /* ManagedFeedImage.swift */,
+				3C9F133A26E4C5FC0077D8C0 /* Infrastructure */,
 				08CE2B8F2285BBD100183A1B /* Info.plist */,
 			);
 			path = FeedStoreChallenge;
@@ -151,6 +148,25 @@
 				08CB21DD2616389100751C29 /* NSManagedObjectContext+Stub.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3C9F133A26E4C5FC0077D8C0 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3C9F133B26E4C60D0077D8C0 /* CoreData */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3C9F133B26E4C60D0077D8C0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				08F35C6E261612AE00AFE277 /* CoreDataFeedStore.swift */,
+				3CBEA48826E37C7D00D16FFF /* FeedStore.xcdatamodeld */,
+				3CBEA48C26E382FC00D16FFF /* ManagedCache.swift */,
+				3CBEA48E26E3831200D16FFF /* ManagedFeedImage.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
